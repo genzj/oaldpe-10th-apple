@@ -22,10 +22,10 @@ cat "../oaldpe-styles-unfold-all.css" >> "objects/dict.dictionary/Contents/Defau
 # set folder icon
 # ref: https://apple.stackexchange.com/a/6905 and https://apple.stackexchange.com/a/10020
 ## Extract the icon to its own resource file:
-/Developer/Tools/DeRez -only icns "../icon.png" >! tmpicns.rsrc
+DeRez -only icns "../icon.png" >! tmpicns.rsrc
 
 ## append this resource to the file you want to icon-ize.
-/Developer/Tools/Rez -append tmpicns.rsrc -o $'objects/dict.dictionary/Icon\r'
+Rez -append tmpicns.rsrc -o $'objects/dict.dictionary/Icon\r'
 
 ## Use the resource to set the icon.
 SetFile -a C 'objects/dict.dictionary/'

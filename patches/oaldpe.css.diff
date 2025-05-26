@@ -1,0 +1,39 @@
+--- /Volumes/workplace/python/pyglossary/oxford-10th/patches/oaldpe.css	2025-05-26 13:27:28.000000000 
++++ /Volumes/workplace/python/pyglossary/oxford-10th/patches/oaldpe-macos.css	2025-05-26 13:27:22.000000000 
+@@ -1239,19 +1239,19 @@
+     transition: background-color .1s linear;
+ }
+ 
+ .collapse .unbox .box_title::before {
+     font-family: 'Apple Symbols', 'Segoe UI Symbol';
+     font-weight: normal;
+-    content: '⊕';
++    content: ' ';
+     margin-right: 5px;
+     vertical-align: .5px;
+ }
+ 
+ .collapse .unbox.is-active .box_title::before {
+-    content: '⊖';
++    content: ' ';
+ }
+ 
+ .collapse .unbox .box_title:hover,
+ .collapse .unbox.is-active .box_title {
+     background-color: var(--background-color);
+ }
+@@ -1297,13 +1297,13 @@
+ .collapse .unbox .body .unbox undt chn::after {
+     content: '）';
+ }
+ 
+ /* 折叠块内容 Unbox Content */
+ .collapse .unbox .box_title + * {
+-    display: none; /* Hide by default */
++    display: block; /* Shown by default */
+ }
+ 
+ /* Paragraph */
+ .collapse .unbox .body .p {
+     display: block;
+ }
