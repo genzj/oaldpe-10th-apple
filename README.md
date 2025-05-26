@@ -6,6 +6,15 @@
 
 请支持原分享者和原书作者.
 
+## 直接下载安装
+
+1. 打开 <https://github.com/genzj/oaldpe-10th-apple/releases>
+1. 下载Release - Assets 中的 `oaldpe-apple.dictionary.tar.xz` 并解压.
+1. 打开系统词典, 菜单栏中选择 `文件-打开词典文件夹`;
+1. 把解压得到的 `oaldpe-apple.dictionary` 文件夹移动到此处;
+1. 重启系统词典应用;
+1. 快捷键 `command + ,` 开启偏好设置, 勾选列表中 `OALDPE En-Cn 精装版` 开头的那项即可.
+
 ## 环境搭建
 
 1. 安装 Xcode 的命令行工具 [Command Line Tools for Xcode](https://developer.apple.com/downloads).
