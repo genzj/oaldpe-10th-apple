@@ -1,9 +1,33 @@
---- /Volumes/workplace/python/pyglossary/oxford-10th/patches/oaldpe.css	2025-05-26 13:27:28.000000000 
-+++ /Volumes/workplace/python/pyglossary/oxford-10th/patches/oaldpe-macos.css	2025-05-26 13:27:22.000000000 
-@@ -1239,19 +1239,19 @@
-     transition: background-color .1s linear;
+--- oaldpe.css.original	2026-05-21 11:46:17
++++ oaldpe-styles-unfold-all.css	2026-05-21 14:19:59
+@@ -158,7 +158,7 @@
+ 
+ /* 词条框架 */
+ .oald {
+-    display: none; /* Hide by default */
++    display: block; /* Display by default */ /* issue #2 */
  }
  
+ .oald.visible {
+@@ -517,7 +517,7 @@
+ 
+ /* Phrasal Verbs */
+ .phrasal_verb_links ul.pvrefs {
+-    display: none; /* Hide by default */
++    display: block; /* Display by default */
+     padding: 1em 0;
+ }
+ 
+@@ -1094,7 +1094,7 @@
+ }
+ 
+ a.Ref .xs .wrap {
+-    display: none;
++    display: block;
+ }
+ 
+ a.Ref .xs::before {
+@@ -1242,13 +1242,13 @@
  .collapse .unbox .box_title::before {
      font-family: 'Apple Symbols', 'Segoe UI Symbol';
      font-weight: normal;
@@ -19,13 +43,7 @@
  }
  
  .collapse .unbox .box_title:hover,
- .collapse .unbox.is-active .box_title {
-     background-color: var(--background-color);
- }
-@@ -1297,13 +1297,13 @@
- .collapse .unbox .body .unbox undt chn::after {
-     content: '）';
- }
+@@ -1300,7 +1300,7 @@
  
  /* 折叠块内容 Unbox Content */
  .collapse .unbox .box_title + * {
@@ -34,6 +52,3 @@
  }
  
  /* Paragraph */
- .collapse .unbox .body .p {
-     display: block;
- }

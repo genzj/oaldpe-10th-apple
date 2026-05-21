@@ -158,7 +158,7 @@ li {
 
 /* 词条框架 */
 .oald {
-    display: none; /* Hide by default */
+    display: block; /* Display by default */ /* issue #2 */
 }
 
 .oald.visible {
@@ -517,7 +517,7 @@ h2.shcut shcut chn::before {
 
 /* Phrasal Verbs */
 .phrasal_verb_links ul.pvrefs {
-    display: none; /* Hide by default */
+    display: block; /* Display by default */
     padding: 1em 0;
 }
 
@@ -1094,7 +1094,7 @@ a.Ref .xs {
 }
 
 a.Ref .xs .wrap {
-    display: none;
+    display: block;
 }
 
 a.Ref .xs::before {
