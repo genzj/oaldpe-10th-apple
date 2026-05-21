@@ -2,7 +2,7 @@
 
 ## 说明
 
-本项目基于 https://forum.freemdict.com/t/topic/30466 分享的OALDPE词典, 转换为苹果系统词典格式并有少量适配性修改. 转换过程参考https://github.com/tisfeng/Easydict/blob/main/docs/How-to-use-macOS-system-dictionary-in-Easydict-zh.md
+本项目基于 <https://forum.freemdict.com/t/topic/30466> 分享的OALDPE词典, 转换为苹果系统词典格式并有少量适配性修改. 转换过程参考<https://github.com/tisfeng/Easydict/blob/main/docs/How-to-use-macOS-system-dictionary-in-Easydict-zh.md>
 
 请支持原分享者和原书作者.
 
@@ -31,7 +31,7 @@
     ├──  oaldpe-jquery.js
     ├──  oaldpe.1.mdd
     ├──  oaldpe.2.mdd
-    ├──  oaldpe.3-001.mdd
+    ├──  oaldpe.3.mdd
     ├──  oaldpe.css
     ├──  oaldpe.js
     ├──  oaldpe.mdd
@@ -60,6 +60,9 @@ source .venv/bin/activate
 
 # 卸载用户字典目录中的字典
 ./uninstall.sh
+
+# 同步构建产物到用户字典目录（开发调试用，使用rsync增量同步）
+./sync.sh
 ```
 
 ## 适配
