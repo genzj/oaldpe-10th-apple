@@ -17,14 +17,15 @@
 
 ## 环境搭建
 
-1. 安装 Xcode 的命令行工具 [Command Line Tools for Xcode](https://developer.apple.com/downloads).
+1. 安装 Xcode 的命令行工具 [Command Line Tools for Xcode](https://developer.apple.com/download/all/?q=Command%20Line%20Tools).
 1. 确认Xcode版本: `/usr/bin/xcodebuild -version`.
-1. 下载对应版本的[Additional Tools for Xcode](https://developer.apple.com/downloads). 下载后，需要将dmg文件中的 `Dictionary Development Kit` 移动到 `/Applications/Utilities/Dictionary Development Kit` 位置.
-1. 安装Python 3.12，建议使用[mise](https://mise.jdx.dev/lang/python.html)安装和管理Python环境.
+1. 下载对应版本的[Additional Tools for Xcode](https://developer.apple.com/download/all/?q=Additional%20Tools%20for%20Xcode). 下载后，需要将dmg文件中的 `Dictionary Development Kit` 移动到 `/Applications/Utilities/Dictionary Development Kit` 位置.
+1. 安装Python 3.12+，建议使用[mise](https://mise.jdx.dev/lang/python.html)安装和管理Python环境.
 1. 克隆本项目并进入项目文件夹
 1. 创建一个Python venv: `python -m venv ./.venv`
 1. 安装依赖包: `source .venv/bin/activate && pip install -r ./requirements.txt`
 1. 下载原词典，解压后放在项目文件夹下的mdict目录中. 此时mdict目录结构应该如下所示:
+
     ```text
      mdict
     ├──  oaldpe-jquery.js
