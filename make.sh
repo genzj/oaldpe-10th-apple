@@ -21,11 +21,14 @@ cat "../oaldpe-styles-unfold-all.css" >> "objects/dict.dictionary/Contents/Defau
 
 # set folder icon
 # ref: https://apple.stackexchange.com/a/6905 and https://apple.stackexchange.com/a/10020
-## Extract the icon to its own resource file:
-DeRez -only icns "../icon.png" >! tmpicns.rsrc
-
-## append this resource to the file you want to icon-ize.
-Rez -append tmpicns.rsrc -o $'objects/dict.dictionary/Icon\r'
+## Convert PNG to icns
+mkdir -p ../icon.iconset
+sips -z 512 512 "../icon.png" --out ../icon.iconset/icon_256x256@2x.png
+iconutil -c icns ../icon.iconset -o ../icon.icns
+## Write icns resource directly into the Icon file (bypasses DeRez which can't read data-fork icns)
+echo 'read '"'"'icns'"'"' (-16455) "../icon.icns";' > tmpicns.r
+touch $'objects/dict.dictionary/Icon\r'
+Rez tmpicns.r -append -o $'objects/dict.dictionary/Icon\r'
 
 ## Use the resource to set the icon.
 SetFile -a C 'objects/dict.dictionary/'
