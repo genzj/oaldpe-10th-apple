@@ -1,5 +1,5 @@
 --- oaldpe.css.original	2026-05-21 11:46:17
-+++ oaldpe-styles-unfold-all.css	2026-05-21 14:19:59
++++ oaldpe-styles-unfold-all.css	2026-05-21 22:32:17
 @@ -158,7 +158,7 @@
  
  /* 词条框架 */
@@ -9,6 +9,15 @@
  }
  
  .oald.visible {
+@@ -457,7 +457,7 @@
+ }
+ 
+ .idioms .idioms_heading ~ * {
+-    display: none; /* Hide by default */
++    display: block; /* Display by default */
+ }
+ 
+ .idm-g {
 @@ -517,7 +517,7 @@
  
  /* Phrasal Verbs */

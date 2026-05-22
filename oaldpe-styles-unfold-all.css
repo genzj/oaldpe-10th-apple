@@ -457,7 +457,7 @@ h2.shcut shcut chn::before {
 }
 
 .idioms .idioms_heading ~ * {
-    display: none; /* Hide by default */
+    display: block; /* Display by default */
 }
 
 .idm-g {
