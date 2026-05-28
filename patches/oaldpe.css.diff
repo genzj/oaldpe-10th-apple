@@ -1,6 +1,36 @@
 --- oaldpe.css.original	2026-05-21 11:46:17
-+++ oaldpe-styles-unfold-all.css	2026-05-21 22:32:17
-@@ -158,7 +158,7 @@
++++ oaldpe-styles-unfold-all.css	2026-05-26 14:41:32
+@@ -152,13 +152,37 @@
+ }
+ 
+ .oaldpe-nav span.active, .oaldpe-nav span:hover {
++    background-color: #4b8b45;
++    color: white;
++}
++
++.oaldpe-nav a {
++    font-family: var(--font-family-ui);
++    font-weight: bold;
++    font-size: .9em;
++    text-transform: capitalize;
++    white-space: nowrap;
++    padding: 2px 10px;
++    border-radius: 5px;
++    border: 1px solid #a5d6a7;
++    cursor: pointer;
++    text-decoration: none;
++    background-color: #a5d6a7;
++    color: #2f5932;
++}
++
++.oaldpe-nav a:not(:first-child) {
++    margin-left: 10px;
++}
++
++.oaldpe-nav a:hover {
+     background-color: #4b8b45;
+     color: white;
+ }
  
  /* 词条框架 */
  .oald {
@@ -9,7 +39,7 @@
  }
  
  .oald.visible {
-@@ -457,7 +457,7 @@
+@@ -457,7 +481,7 @@
  }
  
  .idioms .idioms_heading ~ * {
@@ -18,7 +48,7 @@
  }
  
  .idm-g {
-@@ -517,7 +517,7 @@
+@@ -517,7 +541,7 @@
  
  /* Phrasal Verbs */
  .phrasal_verb_links ul.pvrefs {
@@ -27,7 +57,7 @@
      padding: 1em 0;
  }
  
-@@ -1094,7 +1094,7 @@
+@@ -1094,7 +1118,7 @@
  }
  
  a.Ref .xs .wrap {
@@ -36,7 +66,7 @@
  }
  
  a.Ref .xs::before {
-@@ -1242,13 +1242,13 @@
+@@ -1242,13 +1266,13 @@
  .collapse .unbox .box_title::before {
      font-family: 'Apple Symbols', 'Segoe UI Symbol';
      font-weight: normal;
@@ -52,7 +82,7 @@
  }
  
  .collapse .unbox .box_title:hover,
-@@ -1300,7 +1300,7 @@
+@@ -1300,7 +1324,7 @@
  
  /* 折叠块内容 Unbox Content */
  .collapse .unbox .box_title + * {

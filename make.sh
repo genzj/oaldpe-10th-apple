@@ -9,6 +9,7 @@ fi
 pushd oaldpe-apple
 
 sed -i "" 's:src="/:src=":g' oaldpe-apple.xml
+python3 ../fix_nav_links.py oaldpe-apple.xml
 
 # build_dict.sh fails to handle a large quantity of files; workaround is below
 make || true
